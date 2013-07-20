@@ -8,7 +8,7 @@ PreRequisites:
 
 * <a href="http://www.distelli.com/docs/setup.html" target="_blank">Install the DistelliCLI</a>
 * <a href="http://www.distelli.com/docs/server-setup.html" target="_blank">Add your Server</a>. Make sure its an Ubuntu Server.
-* <a href="https://github.com/distelli/NodeJS target="_blank">Deploy the NodeJS Runtime on your server</a>
+* <a href="https://github.com/distelli/NodeJS" target="_blank">Deploy the NodeJS Runtime on your server</a>
 
 Deploying the SimpleNodeApp
 ---------------------------
