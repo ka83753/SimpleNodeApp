@@ -1,0 +1,9 @@
+<username>/SimpleNodeJSApp:
+  PostInstall:
+    - 'npm install'
+  Exec:
+    - 'exec node server.js'
+  PkgInclude:
+    - 'server.js'
+    - 'package.json'
+
