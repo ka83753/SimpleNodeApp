@@ -36,23 +36,7 @@ Clone this repo and follow the steps below to deploy the SimpleNodeApp to your s
 Wait for the deployment to complete. Once the deployment is finished the SimpleNode App will be running on your server on port 8080. To test it out make a request and you should see a hello world message:
 
 <pre>
-curl -v http://ec2-67-202-47-54.compute-1.amazonaws.com:8080/ ; echo
-* About to connect() to ec2-67-202-47-54.compute-1.amazonaws.com port 8080 (#0)
-*   Trying 67.202.47.54... connected
-> GET / HTTP/1.1
-> User-Agent: curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3
-> Host: ec2-67-202-47-54.compute-1.amazonaws.com:8080
-> Accept: */*
-> 
-< HTTP/1.1 200 OK
-< X-Powered-By: Express
-< Content-Type: text/html; charset=utf-8
-< Content-Length: 37
-< Date: Sat, 20 Jul 2013 18:52:37 GMT
-< Connection: keep-alive
-< 
-* Connection #0 to host ec2-67-202-47-54.compute-1.amazonaws.com left intact
-* Closing connection #0
+curl http://ec2-67-202-47-54.compute-1.amazonaws.com:8080/
 Hello World from NodeJS and Distelli!
 </pre>
  
