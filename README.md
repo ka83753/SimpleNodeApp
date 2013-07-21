@@ -18,7 +18,7 @@ Clone this repo and follow the steps below to deploy the SimpleNodeApp to your s
 1. Edit the distelli-spec.yml file and replace <username> at the top of the file with your username from your Distelli Account
 2. Create the Application: (<a href="http://www.distelli.com/docs/creating-an-application.html" target="_blank"><i>What is this?</i></a>)
 
-    <pre>% distelli create <username>/SimpleNodeApp
+    <pre>% distelli create &lt;username&gt;/SimpleNodeApp
         Creating App: SimpleNodeApp
         App SimpleNodeApp created successfully
     </pre>
