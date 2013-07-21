@@ -34,7 +34,7 @@ Clone this repo and follow the steps below to deploy the SimpleNodeApp to your s
 
 4. Deploy the release you just pushed using the Distelli Web Interface. (<a href="http://www.distelli.com/docs/starting-a-deployment.html" target="_blank"><i>show me how</i></a>)
 
-Wait for the deployment to complete. Once the deployment is finished the SimpleNode App will be running on your server on port 8080. To test it out make a request and you should see a hello world message:
+Wait for the deployment to complete. Once the deployment is finished the SimpleNode App will be running on your server on port <b>8080</b>. To test it out make a request and you should see a hello world message:
 
 <pre>
 curl http://ec2-67-202-47-54.compute-1.amazonaws.com:8080/
