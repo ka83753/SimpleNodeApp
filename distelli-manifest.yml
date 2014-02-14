@@ -1,9 +1,6 @@
 <username>/SimpleNodeApp:
-  PostInstall:
-    - 'npm install'
+  Type: NodeJS
+  OS: Ubuntu
   Exec:
     - 'exec node server.js'
-  PkgInclude:
-    - 'server.js'
-    - 'package.json'
-
+  
