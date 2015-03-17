@@ -1,7 +1,7 @@
 SimpleNodeApp
 =============
 
-This is a simple NodeJS application and a distelli manifest file that can be used to deploy your application to any server using the <a href="http://www.distelli.com" target="_blank">Distelli Deployment Platform</a>
+This is a simple NodeJS application and a distelli manifest file that can be used to deploy your application to any server using  <a href="http://www.distelli.com" target="_blank">Distelli</a>.
 
 PreRequisites:
 ---------------
