@@ -6,8 +6,8 @@ This is a simple NodeJS application and a distelli manifest file that can be use
 PreRequisites:
 ---------------
 
-* <a href="http://www.distelli.com/docs/setup.html" target="_blank">Install the DistelliCLI</a>
-* <a href="http://www.distelli.com/docs/server-setup.html" target="_blank">Add your Server</a>. Make sure its an Ubuntu Server.
+* <a href="https://www.distelli.com/docs/setup" target="_blank">Install the DistelliCLI</a>
+* <a href="https://www.distelli.com/docs/agent-setup" target="_blank">Add your Server</a>. Make sure its an Ubuntu Server.
 
 Deploying the SimpleNodeApp
 ---------------------------
@@ -31,7 +31,7 @@ Clone this repo and follow the steps below to deploy the SimpleNodeApp to your s
         Creating Releases... DONE
     </pre>
 
-4. Deploy the release you just pushed using the Distelli Web Interface. (<a href="http://www.distelli.com/docs/starting-a-deployment.html" target="_blank"><i>show me how</i></a>)
+4. Deploy the release you just pushed using the Distelli Web Interface. (<a href="https://www.distelli.com/docs/deployment-guides" target="_blank"><i>show me how</i></a>)
 
 Wait for the deployment to complete. Once the deployment is finished the SimpleNode App will be running on your server on port <b>8080</b>. To test it out make a request and you should see a hello world message:
 
