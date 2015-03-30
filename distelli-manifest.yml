@@ -1,6 +1,13 @@
 <username>/SimpleNodeApp:
-  Type: NodeJS
-  OS: Ubuntu
+  PkgInclude:
+    - 'server.js'
+    - 'package.json'
+    - 'node_modules/'
+  PreInstall:
+    - 'sudo apt-get update'
+  PostInstall:
+    - 'sudo apt-get install -y nodejs'
+    - 'sudo apt-get install -y npm'
+    - 'npm install'
   Exec:
-    - 'exec node server.js'
-  
+    - 'exec /usr/bin server.js'
