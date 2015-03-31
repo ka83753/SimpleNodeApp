@@ -1,12 +1,8 @@
-var express = require("express");
-var app = express();
-app.use(express.logger());
+var http = require('http');
 
-app.get('/', function(request, response) {
-  response.send('Hello World from NodeJS and Distelli!');
-});
+http.createServer(function (request, response) {
+    response.writeHead(200, {'Content-Type': 'text/plain'});
+    response.end('Hello World\n');
+}).listen(8080);
 
-var port = process.env.PORT || 8080;
-app.listen(port, function() {
-  console.log("Listening on " + port);
-});
+console.log('Server started');
