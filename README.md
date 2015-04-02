@@ -3,7 +3,7 @@ SimpleNodeApp
 
 This is a simple NodeJS application and a Distelli manifest file that can be used to deploy your application to any server using  <a href="http://www.distelli.com" target="_blank">Distelli</a>.
 
-PreRequisites:
+Prerequisites:
 ---------------
 
 * <a href="https://www.distelli.com/docs/setup" target="_blank">Install the DistelliCLI</a>
