@@ -1,5 +1,4 @@
 #SimpleNodeApp
-=============
 This tutorial will walk you through deploying a simple HelloWorld Node.js Application to any server with <a href="https://www.distelli.com" target="_blank">Distelli</a>.
 
 <a href="https://www.distelli.com" target="_blank">Distelli</a> makes it fast and easy for developers to deploy code to any server with the push of a button. Our platform empowers developers and their teams to spend less time building and maintaining complex deployment tools and homegrown scripts so they can focus their valuable time and effort on creating the software that powers their business. Distelli is funded by <a href="http://www.a16z.com" target="_blank">Andreessen Horowitz</a>.
