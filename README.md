@@ -15,13 +15,12 @@ Deploying the SimpleNodeApp
 Clone this repo and follow the steps below to deploy the SimpleNodeApp to your server. 
 
 1. Edit the distelli-manifest.yml file and replace &lt;username&gt; at the top of the file with your username from your Distelli Account
-2. Create the Application: (<a href="http://www.distelli.com/docs/creating-an-application.html" target="_blank"><i>What is this?</i></a>)
-
     <i>Replace &lt;username&gt; with your username</i>
     <pre>% distelli create &lt;username&gt;/SimpleNodeApp
         Creating App: SimpleNodeApp
         App SimpleNodeApp created successfully
     </pre>
+2. Create the Application: (<a href="http://www.distelli.com/docs/creating-an-application.html" target="_blank"><i>What is this?</i></a>)
 
 3. Push a new Release: (<a href="http://www.distelli.com/docs/pushing-an-artifact.html" target="_blank"><i>what is a release?</i></a>)
 
