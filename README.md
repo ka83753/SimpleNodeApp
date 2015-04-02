@@ -9,7 +9,7 @@ PreRequisites:
 * <a href="https://www.distelli.com/docs/setup" target="_blank">Install the DistelliCLI</a>
 * <a href="https://www.distelli.com/docs/agent-setup" target="_blank">Add your Server</a>. Make sure its an Ubuntu Server.
 
-Deploying the SimpleNodeApp
+Deploying the SimpleNodeApp:
 ---------------------------
 
 Clone this repo and follow the steps below to deploy the SimpleNodeApp to your server. 
