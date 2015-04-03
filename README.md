@@ -2,16 +2,15 @@
 This tutorial will walk you through deploying a simple HelloWorld Node.js Application to any server with <a href="https://www.distelli.com" target="_blank">Distelli</a>.
 
 <a href="https://www.distelli.com" target="_blank">Distelli</a> makes it fast and easy for developers to deploy code to any server with the push of a button. Our platform empowers developers and their teams to spend less time building and maintaining complex deployment tools and homegrown scripts so they can focus their valuable time and effort on creating the software that powers their business. Distelli is funded by <a href="http://www.a16z.com" target="_blank">Andreessen Horowitz</a>.
-Prerequisites:
----------------
 
-* <a href="https://www.distelli.com/docs/setup" target="_blank">Install the DistelliCLI</a>
-* <a href="https://www.distelli.com/docs/agent-setup" target="_blank">Add your Server</a>. Make sure its an Ubuntu Server.
+##Prerequisites:##
+* <a href="https://www.distelli.com/signup" target="_blank">Sign up for a free Distelli account</a>.
+* <a href="https://www.distelli.com/docs/setup" target="_blank">Install the Distelli CLI Tool</a>.
+* <a href="https://www.distelli.com/docs/agent-setup" target = "_blank">Install the Distelli agent on your server</a>.
 
-Deploying the SimpleNodeApp:
----------------------------
+##Deploying Your Node.js Application With Distelli##
 
-Clone this repo and follow the steps below to deploy the SimpleNodeApp to your server. 
+Clone this repo and follow the steps below to deploy the SimpleNodeApp to your server.
 
 1. Edit the distelli-manifest.yml file and replace &lt;username&gt; at the top of the file with your username from your Distelli Account
     <i>Replace &lt;username&gt; with your username</i>
@@ -37,4 +36,4 @@ Wait for the deployment to complete. Once the deployment is finished the SimpleN
 curl http://ec2-67-202-47-54.compute-1.amazonaws.com:8080/
 Hello World from NodeJS and Distelli!
 </pre>
- 
+
