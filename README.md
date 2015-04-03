@@ -10,17 +10,22 @@ This tutorial will walk you through deploying a simple HelloWorld Node.js Applic
 
 ##Deploying Your Node.js Application With Distelli##
 
-Clone this repo and follow the steps below to deploy the SimpleNodeApp to your server.
+1. Enter the following commands to clone this repository onto your local machine:
+<pre>git clone https://github.com/Distelli/SimpleNodeApp.git</pre>
+You should see the following message on successful clone:
 
-1. Edit the distelli-manifest.yml file and replace &lt;username&gt; at the top of the file with your username from your Distelli Account
+Then, use the cd command to enter the directory:
+<pre>cd SimpleMeteorApp</pre>
+
+2. Edit the distelli-manifest.yml file and replace &lt;username&gt; at the top of the file with your username from your Distelli Account
     <i>Replace &lt;username&gt; with your username</i>
     <pre>% distelli create &lt;username&gt;/SimpleNodeApp
         Creating App: SimpleNodeApp
         App SimpleNodeApp created successfully
     </pre>
-2. Create the Application: (<a href="http://www.distelli.com/docs/creating-an-application.html" target="_blank"><i>What is this?</i></a>)
+3. Create the Application: (<a href="http://www.distelli.com/docs/creating-an-application.html" target="_blank"><i>What is this?</i></a>)
 
-3. Push a new Release: (<a href="http://www.distelli.com/docs/pushing-an-artifact.html" target="_blank"><i>what is a release?</i></a>)
+4. Push a new Release: (<a href="http://www.distelli.com/docs/pushing-an-artifact.html" target="_blank"><i>what is a release?</i></a>)
 
     <pre>% distelli push -m "Initial Release of SimpleNodeApp"
         Pushing App: SimpleNodeApp
@@ -28,7 +33,7 @@ Clone this repo and follow the steps below to deploy the SimpleNodeApp to your s
         Creating Releases... DONE
     </pre>
 
-4. Deploy the release you just pushed using the Distelli Web Interface. (<a href="https://www.distelli.com/docs/deployment-guides" target="_blank"><i>show me how</i></a>)
+5. Deploy the release you just pushed using the Distelli Web Interface. (<a href="https://www.distelli.com/docs/deployment-guides" target="_blank"><i>show me how</i></a>)
 
 Wait for the deployment to complete. Once the deployment is finished the SimpleNode App will be running on your server on port <b>8080</b>. To test it out make a request and you should see a hello world message:
 
