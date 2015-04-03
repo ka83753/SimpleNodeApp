@@ -13,7 +13,6 @@ This tutorial will walk you through deploying a simple HelloWorld Node.js Applic
 1. Enter the following commands to clone this repository onto your local machine:
 <pre>git clone https://github.com/Distelli/SimpleNodeApp.git</pre>
 You should see the following message on successful clone:
-
 Then, use the cd command to enter the directory:
 <pre>cd SimpleMeteorApp</pre>
 
