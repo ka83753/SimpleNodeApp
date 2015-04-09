@@ -17,28 +17,45 @@ You should see the following message on successful clone:
 Then, use the cd command to enter the directory:
 <pre>cd SimpleMeteorApp</pre>
 
-2. Edit the distelli-manifest.yml file and replace &lt;username&gt; at the top of the file with your username from your Distelli Account
-    <i>Replace &lt;username&gt; with your username</i>
-    <pre>% distelli create &lt;username&gt;/SimpleNodeApp
-        Creating App: SimpleNodeApp
-        App SimpleNodeApp created successfully
-    </pre>
-3. Create the Application: (<a href="http://www.distelli.com/docs/creating-an-application.html" target="_blank"><i>What is this?</i></a>)
+2. To create an application with Distelli, enter the following command into your terminal replacing "username" with your Distelli username:
+<pre> $ distelli create username/SimpleNodeApp</pre>
+You'll be prompted to login, use the email address and password associated with your Distelli account:
+<img src="https://monosnap.com/file/gB7ItfkLXd2iRx9Tp0YLMZ3O3cBJg6.png">
+You should see the following message on successful app creation:
+<img src="https://monosnap.com/file/HppwO0P18VIHMFFrVz8y6HLCuxPOl5.png">
 
-4. Push a new Release: (<a href="http://www.distelli.com/docs/pushing-an-artifact.html" target="_blank"><i>what is a release?</i></a>)
+3. To create an environment with Distelli, <a href="https://www.distelli.com/login" target="_blank">login to your Distelli account<a>. Once logged in, you should see the Node application you just created. Select the SimpleNodeApp:
+<img src="https://monosnap.com/file/SC6RLf9JuG6Gr1etCAwYWV0GS45wbp.png">
+Select the environments tab:
+<img src="https://monosnap.com/file/TwfRM9lesvxqAZ1ebhpRma2zaKs5l4.png">
+Create a new environment by selecting "New Environment":
+<img src="https://monosnap.com/file/ZvzS7gYnLORsGo2xo8vkemH9p9dG87.png">
+Name the environment "NodeEnvironment" then select the "Create Environment" button:
+<img src="https://monosnap.com/file/tjJQsZNP8n0lJyBlo1PXXp0WSnSSdj.png">
 
-    <pre>% distelli push -m "Initial Release of SimpleNodeApp"
-        Pushing App: SimpleNodeApp
-        Uploading: [==========] 100%
-        Creating Releases... DONE
-    </pre>
+4. Now, let's add a server to the environment. Select the "Servers" button on the top right of the page:
+<img src="https://monosnap.com/file/0EwRh6finP4WZNu6iYjjHHXN4zG0LF.png">
+Now select the "Add/Remove Servers" button on the top right of the page:
+<img src="https://monosnap.com/file/fif0s0RmSYatWIaVBPehkA964XDXIA.png">
+You should see the server you installed the agent on prior to starting this tutorial. Add that server to the environment by selecting the add button:
+<img src="https://monosnap.com/file/inu2ru18y32O296qGArj4UrwMfL6Lb.png">
 
-5. Deploy the release you just pushed using the Distelli Web Interface. (<a href="https://www.distelli.com/docs/deployment-guides" target="_blank"><i>show me how</i></a>)
+5. Open the distelli-manifest.yml file with your favorite text editor. Replace <username> with your Distelli username:
+<img src="https://monosnap.com/file/vQpQOchX6mLp8DE9yLb366rhfWYvzK.png">
+<i><b>Note:</b> This is not the email you used to sign up for your Distelli account, this is the unique username selected after signup.</i>
 
-Wait for the deployment to complete. Once the deployment is finished the SimpleNode App will be running on your server on port <b>8080</b>. To test it out make a request and you should see a hello world message:
+7. Now we're ready to push our first release. Enter the following command into your terminal:
+<pre>$ distelli push -m "First push with Distelli"</pre>
+<img src="https://monosnap.com/file/adOyzjNpTlsxJCTGFi3og2UacVVGlZ.png">
+Enter the email and password associated with your Distelli account:
+<img src="https://monosnap.com/file/Mr99k4jwr490PGtHf5DJkzdNPiVTDf.png">
+You should see the following message on successful push:
+<img src="https://monosnap.com/file/G2l1fsR14BE58y9NsSwws8LAEwk2Uc.png">
+8. Now we're ready to deploy our first release. Navigate back to <a href="https://www.distelli.com" target="blank">Distelli.com</a>.
 
-<pre>
-curl http://ec2-67-202-47-54.compute-1.amazonaws.com:8080/
-Hello World from NodeJS and Distelli!
-</pre>
+Select your application and then click the green lightning bolt:
+<img src="https://monosnap.com/file/lASQokpu8l5V4qZi0uq2baFDp9Xu4y.png">
+Congrats, you've just deployed your first application with Distelli!
+
+Questions? Shoot us an email at <a href="mailto:support@disteli.com" target="_blank">support@distelli.com</a>.
 
