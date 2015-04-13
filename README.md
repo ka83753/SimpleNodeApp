@@ -15,7 +15,7 @@ This tutorial will walk you through deploying a simple Hello World Node.js Appli
 You should see the following message on successful clone:
 <img src="https://monosnap.com/file/sydWhXfSeC4uDL8EyyGtv7oLa3fS2J.png">
 Then, use the cd command to enter the directory:
-<pre>cd SimpleMeteorApp</pre>
+<pre>cd SimpleNodeApp</pre>
 
 2. To create an application with Distelli, enter the following command into your terminal replacing "username" with your Distelli username:
 <pre> $ distelli create username/SimpleNodeApp</pre>
