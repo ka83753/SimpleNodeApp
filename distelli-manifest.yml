@@ -4,6 +4,7 @@
   PkgExclude:
     - 'node_modules/'
   PreInstall:
+    - 'echo "PreInstall Starting."'
     # Check to see if node is already installed
     - if [ -a /usr/local/bin/node ]; then
     #   It is already installed
@@ -15,7 +16,7 @@
     -   'sudo tar -C /usr/local --strip-components 1 -zxvf node-v0.12.2-linux-x64.tar.gz'
     - fi
   PostInstall:
-    - 'echo "PostInstal Starting."'
+    - 'echo "PostInstall Starting."'
     - 'sudo npm config set loglevel verbose'
   Exec:
     - 'echo "Exec Starting."'
