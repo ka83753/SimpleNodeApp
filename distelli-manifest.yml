@@ -4,9 +4,19 @@
   PkgExclude:
     - 'node_modules/'
   PreInstall:
-    - 'wget http://nodejs.org/dist/v0.12.2/node-v0.12.2-linux-x64.tar.gz'
-    - 'sudo tar -C /usr/local --strip-components 1 -zxvf node-v0.12.2-linux-x64.tar.gz'
+    # Check to see if node is already installed
+    - if [ -a /usr/local/bin/node ]; then
+    #   It is already installed
+    -   echo "node exists"
+    - else
+    #   Install node from nodejs.org
+    -   echo "node does not exist. Installing..."
+    -   'wget http://nodejs.org/dist/v0.12.2/node-v0.12.2-linux-x64.tar.gz'
+    -   'sudo tar -C /usr/local --strip-components 1 -zxvf node-v0.12.2-linux-x64.tar.gz'
+    - fi
   PostInstall:
-    - 'npm config set loglevel verbose'
+    - 'echo "PostInstal Starting."'
+    - 'sudo npm config set loglevel verbose'
   Exec:
+    - 'echo "Exec Starting."'
     - 'exec node server.js'
